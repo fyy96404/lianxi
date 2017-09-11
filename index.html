@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+
+<!-- 
+
+<script>
+document.write("<table border=1 cellspacing=0 cellpadding=5>");
+  var h=prompt("请输入行数",0),l=prompt("请输入列数",0);
+   for(var i=1;i<=h;i++){
+	document.write("<tr>");
+   for(var j=1;j<=l;j++){
+   	document.write("<td>"+i+"-"+j+"</td>");
+   }
+   
+	document.write("</tr>");
+}	
+document.write("</table>");	
+</script> -->
+<!-- 
+
+<script>
+document.write("<table border=1 cellspacing=0 cellpadding=5>");
+   for(var i=1;i<11;i++){
+	// document.write("<tr>");
+	if(i%2==0){
+		document.write("<tr bgcolor=red>")
+	}
+	if(i%2!==0){
+		document.write("<tr bgcolor=yellow>")
+	}
+   for(var j=1;j<=i;j++){
+   	document.write("<td>"+i+"x"+j+"="+(i*j)+"</td>");
+   
+	
+   }
+   
+	document.write("</tr>");
+}	
+document.write("</table>")	
+</script> -->
+
+
+ <script>
+// document.write("<table border=1 cellspacing=0 cellpadding=5>");
+//    for(var i=1;i<11;i++){
+// 	document.write("<tr>");
+
+//    for(var j=1;j<=i;j++){
+//    	// document.write("<td>");
+//    		if(j%2==0){
+// 		document.write("<td bgcolor=red>");
+// 			}
+// 		if(j%2!==0){
+// 		document.write("<td bgcolor=yellow>");  		
+// 	}
+// 	document.write(i+"x"+j+"="+i*j);
+//    		document.write("</td>");
+//    }
+   
+// 	document.write("</tr>");
+// }	
+// document.write("</table>");
+
+// var table ='<table border=1 cellspacing=0>'
+// 	for(i=1;i<11;i++){
+// 		table+='<tr>'
+// 			for(j=1;j<11;j++){
+// 				table+='<td>'+i+'*'+j+'</td>'
+// 			}
+// 		table+='</tr>'
+// 	} 
+// 	document.write(table)
+
+var h=prompt('请输入行数',5)
+for(var i=1;i<=h;i++){
+	 
+	for(var k=1;k<=h-i;k++){
+		document.write('&nbsp')
+	}
+	for(var j=1;j<=2*i-1;j++){
+	document.write("`")	
+
+}	
+document.write('</br>')
+}
+
+
+/*
+0 1 1 2 3 5 8 13 21
+k
+ */
+// var i=1,j=1;
+// for(var k=1;k<=100;){
+// 	document.write("&nbsp"+k)
+//  k=i+j
+//  i=j
+//  j=k
+// }
+  
+
+// var hh=[1,2,3,4,5,6,7,8,10];
+// var max=hh[4];
+// for(i=0;i<hh.length-1;i++){
+// 	if(max<hh[i]){
+// 		max=hh[i]
+// 	}
+// }
+// console.log(hh);
+
+
+// var hh=[3,9,56,32,1,58,96];
+// 	for(i=0;i<hh.length;i++){
+// 		for(j=i+1;j<hh.length;j++){
+// 			if(hh[i]<hh[j]){
+// 				var t=hh[i]
+// 				hh[i]=hh[j]
+// 				hh[j]=t
+
+// 			}
+// 		}
+// 	}
+// 	console.log(hh);
+
+var q=[
+	  [3,4,5,6],
+	  [52,33,12],
+	  [55,63,98,52]
+]
+var w=q[0][0];
+for(i=0;i<q.length;i++){
+	for(j=0;j<q[i].length;j++){
+		if(w<q[i][j]){
+			w=q[i][j]
+		}
+	}
+}
+console.log(w);
+</script>
